@@ -57,7 +57,5 @@ By integrating Cloud Scheduler for lightweight automation and Cloud Composer for
 
 This approach allows for scalability, monitoring, and error handling, making the pipeline robust and production-ready.
 
----
 
-## Project Structure
 

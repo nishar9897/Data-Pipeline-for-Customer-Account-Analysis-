@@ -25,7 +25,7 @@ cleaned_accounts_df = accounts_df.dropna(subset=["account_id", "customer_id"])
 
 # 5. Save the cleaned data to curated bucket
 curated_path = "gs://curated_data_silver/accounts"
-cleaned_accounts_df.write.mode("overwrite").parquet(curated_path)
+cleaned_accounts_df.write.mode("append").parquet(curated_path)
 
 
 print("Data cleaning and transformation completed successfully.")

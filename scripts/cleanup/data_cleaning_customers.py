@@ -19,6 +19,6 @@ customers_df = spark.read.csv(raw_path, header=True, schema=customers_schema)
 cleaned_customers_df = customers_df.dropna(subset=["customer_id"])
 
 curated_path = "gs://curated_data_silver/customers"
-cleaned_customers_df.write.mode("overwrite").parquet(curated_path)
+cleaned_customers_df.write.mode("append").parquet(curated_path)
 
 print("Data cleaning for customers.csv completed.")

@@ -1,4 +1,4 @@
-# GCP Data Engineering Pipeline
+# Customer Account Analysis Pipeline
 
 This project implements an end-to-end data engineering pipeline using Google Cloud Platform (GCP) services, including Cloud Scheduler and Cloud Composer (Airflow), to automate and manage various tasks.
 
